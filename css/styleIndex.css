@@ -1,0 +1,136 @@
+body {
+    display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+}
+
+
+.logo-img {
+    width: 90%;
+}
+@media (max-width: 576px) {
+    .logo-img {
+        width: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-img {
+        width: 50%;
+    }
+}
+
+#carouselExampleIndicators{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40%;
+}
+
+.navbar{
+    height: 10%;
+    z-index: 12;
+    direction:rtl;
+}
+
+.modal-body{
+    direction:rtl;
+}
+
+
+
+
+.main-items{
+    display: flex ;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.carousel-item {
+    align-items: center;
+    justify-content: center;
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+
+.carousel-description{
+    height: 20%;
+}
+
+.container{
+    height:25%;
+    display: flex;
+    flex-direction: column;
+    overflow:auto;
+    justify-content: space-between;
+    
+}
+
+.fullWid{
+    width:100%;
+}
+
+.text-font{
+    font-family: 'Roboto';
+}
+
+.text-font-title{
+    font-family: 'Henny Penny';
+}
+
+
+.promotion {
+    width: 100%;
+    height: 10vh;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5vh;
+    background: #6cf;
+}
+
+@media (max-width:995px) {
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 15vh;
+        bottom: 0;
+        left: 0;
+        background-color: #333;
+        width: 250px;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar-nav.show {
+        transform: translateX(0);
+    }
+}
